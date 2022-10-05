@@ -1,0 +1,71 @@
+/* <!--  Your task is to create a subscription price grid component in react.
+The app is basically divided in 3 boxes each with a distinguishing background color and text.
+The table should also have some CSS formatting.
+The upper box should have should have a CSS class '.community' and background color of "rgb(255, 253, 253)".
+The lower box on right side,should have CSS class '.why-us' and background color of "rgba(85, 145, 142, 0.698)".
+The lower box on left side,should have CSS class '.card' and background color of "rgb(15, 67, 66)".
+The div containing these boxes should have CSS class '.container' and have border radius of 11 px.
+Make sure you have exact text in the 'why us' box .  */
+* {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  width: 800px;
+  height: 440px;
+}
+body {
+  background-color: rgb(24, 42, 59);
+}
+.item {
+  background-color: rgba(25, 255, 255, 0.8);
+  text-align: center;
+  font-size: 20px;
+}
+.card {
+  background-color: rgb(15, 67, 66);
+  height: 240px;
+  width: 400px;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 25px;
+}
+.why-us {
+  background-color: rgba(85, 145, 142, 0.698);
+  height: 240px;
+  width: 400px;
+  text-align: center;
+  padding: 0;
+  color: white;
+}
+.community {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  background-color: rgb(255, 253, 253);
+  height: 200px;
+  width: 800px;
+}
+.list {
+  list-style: none;
+  line-height: 25px;
+  padding: 0;
+}
+
+.why {
+  padding: 30px 20px 11px 20px;
+}
+.subs {
+  padding: 30px 20px 11px 20px;
+}
+strong {
+  font-size: 40px;
+  padding: 10px;
+}
+.month {
+  padding: 15px;
+}
